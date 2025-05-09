@@ -84,8 +84,8 @@ var defaultModels = []bedrock_support.BedrockModel{
 	},
 	{
 		Name:       "anthropic.claude-3-5-sonnet-20240620-v1:0",
-		Completion: &bedrock_support.CohereCompletion{},
-		Response:   &bedrock_support.CohereResponse{},
+		Completion: &bedrock_support.CohereMessagesCompletion{},
+		Response:   &bedrock_support.CohereMessagesResponse{},
 		Config: bedrock_support.BedrockModelConfig{
 			// sensible defaults
 			MaxTokens:   100,
@@ -96,8 +96,8 @@ var defaultModels = []bedrock_support.BedrockModel{
 	},
 	{
 		Name:       "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
-		Completion: &bedrock_support.CohereCompletion{},
-		Response:   &bedrock_support.CohereResponse{},
+		Completion: &bedrock_support.CohereMessagesCompletion{},
+		Response:   &bedrock_support.CohereMessagesResponse{},
 		Config: bedrock_support.BedrockModelConfig{
 			// sensible defaults
 			MaxTokens:   100,
